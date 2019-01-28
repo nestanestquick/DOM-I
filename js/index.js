@@ -13,6 +13,7 @@ const siteContent = {
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
+
   "main-content": {
     "features-h4":"Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -40,3 +41,18 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+const nav1 = document.querySelectorAll('.nav');
+
+classQuery.forEach( element => {
+  console.log(element);
+  element.textContent = ".nav";
+});
