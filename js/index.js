@@ -38,7 +38,7 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+//IMAGES
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -49,10 +49,32 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
 let middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+//
+const navTag = document.getElementsByTagName('a');
 
-const nav1 = document.querySelectorAll('.nav');
+//Dom is awesome// button text
+const cta = document.getElementsByClassName("cta-text")
 
+
+const btnText = document.getElementsByClassName()
 classQuery.forEach( element => {
   console.log(element);
-  element.textContent = ".nav";
+  element.textContent = "Get Started";
 });
+
+
+navBar.setAttribute('src', siteContent["nav"]["nav-item-1"])
+
+const service = document.querySelector('nav a').textContent = "Services";
+
+//nav
+const tagNameTest = document.getElementsByTagName('a');
+const classNameTest = document.getElementsByClassName('nav');
+
+
+
+
+
+
+
+
