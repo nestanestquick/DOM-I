@@ -48,29 +48,41 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
 
 let middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+//Nav
+const navList = document.getElementsByTagName("a");
+navList[0].innerHTML = "Services";
+navList[1].innerHTML = "Product";
+navList[2].innerHTML = "Vision";
+navList[3].innerHTML = "Features";
+navList[4].innerHTML = "About";
+navList[5].innerHTML = "Contact";
+//Middle text
+document.querySelector("h1").innerHTML = "DOM Is Awesome";
+document.querySelector("button").innerHTML = "Get Started";
 
-//
-const navTag = document.getElementsByTagName('a');
+//Boxed content
+const header = document.getElementsByTagName("h4");
+const text = document.getElementsByTagName("p");
 
-//Dom is awesome// button text
-const cta = document.getElementsByClassName("cta-text")
+header[0].innerHTML = siteContent["main-content"]["features-h4"];
+text[0].innerHTML = siteContent["main-content"]["features-content"];
+header[1].innerHTML = siteContent["main-content"]["about-h4"];
+text[1].innerHTML = siteContent["main-content"]["about-content"];
+header[2].innerHTML = siteContent["main-content"]["services-h4"];
+text[2].innerHTML = siteContent["main-content"]["services-content"];
 
+header[3].innerHTML = siteContent["main-content"]["product-h4"];
+text[3].innerHTML = siteContent["main-content"]["product-content"];
+header[4].innerHTML = siteContent["main-content"]["vision-h4"];
+text[4].innerHTML = siteContent["main-content"]["vision-content"];
 
-const btnText = document.getElementsByClassName()
-classQuery.forEach( element => {
-  console.log(element);
-  element.textContent = "Get Started";
-});
+//Footer
+header[5].innerHTML = siteContent["contact"]["contact-h4"];
+text[5].innerHTML = siteContent["contact"]["address"];
+text[6].innerHTML = siteContent["contact"]["phone"];
+text[7].innerHTML = siteContent["contact"]["email"];
 
-
-navBar.setAttribute('src', siteContent["nav"]["nav-item-1"])
-
-const service = document.querySelector('nav a').textContent = "Services";
-
-//nav
-const tagNameTest = document.getElementsByTagName('a');
-const classNameTest = document.getElementsByClassName('nav');
-
+text[8].innerHTML = siteContent["footer"]["copyright"];
 
 
 
