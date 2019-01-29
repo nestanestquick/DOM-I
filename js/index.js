@@ -13,6 +13,7 @@ const siteContent = {
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
+
   "main-content": {
     "features-h4":"Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -37,6 +38,55 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+//IMAGES
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let ctaImage = document.getElementById('cta-img');
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+//Nav
+const navList = document.getElementsByTagName("a");
+navList[0].innerHTML = "Services";
+navList[1].innerHTML = "Product";
+navList[2].innerHTML = "Vision";
+navList[3].innerHTML = "Features";
+navList[4].innerHTML = "About";
+navList[5].innerHTML = "Contact";
+//Middle text
+document.querySelector("h1").innerHTML = "DOM Is Awesome";
+document.querySelector("button").innerHTML = "Get Started";
+
+//Boxed content
+const header = document.getElementsByTagName("h4");
+const text = document.getElementsByTagName("p");
+
+header[0].innerHTML = siteContent["main-content"]["features-h4"];
+text[0].innerHTML = siteContent["main-content"]["features-content"];
+header[1].innerHTML = siteContent["main-content"]["about-h4"];
+text[1].innerHTML = siteContent["main-content"]["about-content"];
+header[2].innerHTML = siteContent["main-content"]["services-h4"];
+text[2].innerHTML = siteContent["main-content"]["services-content"];
+
+header[3].innerHTML = siteContent["main-content"]["product-h4"];
+text[3].innerHTML = siteContent["main-content"]["product-content"];
+header[4].innerHTML = siteContent["main-content"]["vision-h4"];
+text[4].innerHTML = siteContent["main-content"]["vision-content"];
+
+//Footer
+header[5].innerHTML = siteContent["contact"]["contact-h4"];
+text[5].innerHTML = siteContent["contact"]["address"];
+text[6].innerHTML = siteContent["contact"]["phone"];
+text[7].innerHTML = siteContent["contact"]["email"];
+
+text[8].innerHTML = siteContent["footer"]["copyright"];
+
+
+
+
+
+
+
